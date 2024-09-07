@@ -23,11 +23,13 @@ The explosive growth of YouTube has led to vibrant communities around user-gener
 
 ## Setup, Installation and Usage
 
-
-1. Run the Flask application by executing `python main.py`.
-2. Access the application in your web browser at `http://localhost:5000`.
-3. Input the URL of the YouTube video to analyze and click the submit button.
-4. View the sentiment analysis results and visualizations on the results page(it may take few minutes to analyze).
+1. Create a virtual environment `python -m venv yt_sentiment_venv`.
+2. Activate the virtual environment On Windows `yt_sentiment_venv\Scripts\activate` OR On macOS/Linux `source myenv/bin/activate`.
+3. Install the dependencies from requirements.txt `pip install -r requirements.txt` inside code/ folder.
+4. Run the Flask application by executing `python main.py`.
+5. Access the application in your web browser at `http://localhost:5000`.
+6. Input the URL of the YouTube video to analyze and click the submit button.
+7. View the sentiment analysis results and visualizations on the results page(it may take few minutes to analyze).
 
 ## Output
 Landing Page: \
