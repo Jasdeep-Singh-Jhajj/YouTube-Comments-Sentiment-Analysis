@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Likes and Dislikes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #AED6F1;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .plots {
+            display: flex;
+            justify-content: center;
+        }
+        .plot1 {
+            width: 28%;
+            height: 40%;
+            margin-right: 50px;
+        }
+        .plot2 {
+            width: 35%;
+            margin-left: 40px;
+        }
+        .plot3 {
+            width: 28%;
+            margin-left: 40px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        h1, h2, h3, p {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 20px;
+        }
+        h2 {
+            font-size: 1.5em;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+        h3 {
+            font-size: 1.1em;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .logo {
+            display: block;
+            margin: 20px auto;
+            max-width: 120px; /* Adjust size as needed */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Add the YouTube logo image here -->
+        <img src="{{ url_for('static', filename='YouTube.png') }}" alt="YouTube logo" class="logo">
+
+        <h1><b>Beyond Likes and Dislikes: Unveiling YouTube Comment Sentiment</b></h1>
+        <h2>Sentiment Analysis Results</h2>
+        <h3><b>YouTube Video Title:</b> <i>{{ title }}</i></h3>
+        <h3><b>SVM Model Accuracy:</b> <i>{{ results }}</i></h3>
+        <div class="plots">
+            <div class="plot1">
+                <h3>Sentiment Distribution</h3>
+                <img src="{{ url_for('static', filename='sentiment_pie_chart.png') }}" alt="Sentiment Distribution">
+            </div>
+            <div class="plot2">
+                <h3>Accuracies for different kernels</h3>
+                <img src="{{ url_for('static', filename='kernel_accuracies.png') }}" alt="Accuracies for different kernels">
+            </div>
+            <div class="plot3">
+                <h3>Confusion matrix</h3>
+                <img src="{{ url_for('static', filename='confusion_matrix.png') }}" alt="Confusion matrix">
+            </div>
+        </div>
+
+        <h2><b>Best Parameters:</b> <i>{{ best_params }}</i></h2>
+
+    </div>
+</body>
+</html>

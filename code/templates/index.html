@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond Likes and Dislikes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #AED6F1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .index {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 40px;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"] {
+            width: 400px;
+            height: 37px;
+            font-size: 1.3em;
+            margin-right: 20px;
+        }
+        button[type="submit"] {
+            width: 120px;
+            height: 40px;
+            font-size: 1em;
+        }
+        .logo {
+            display: block;
+            margin-left: 380px;
+            margin-top: -60px;
+            max-width: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="index">
+        <img src="{{ url_for('static', filename='YouTube.png') }}" alt="YouTube logo" class="logo">
+        <h1><b>Beyond Likes and Dislikes: Unveiling YouTube Comment Sentiment</b></h1>
+        <h2>Enter YouTube Video URL</h2>
+        <form action="/analyze" method="post">
+            <input type="text" name="video_url" placeholder="Enter YouTube Video URL" required autocomplete="off">
+            <button type="submit">Analyze</button>
+        </form>
+    </div>
+</body>
+</html>
