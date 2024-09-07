@@ -34,7 +34,7 @@ Landing Page: \
 <img src="images/yt_dashboard_landing.png" alt="Project Logo" width="70%">
 
 Results Page: \
-<img src="images/yt_dashboard.png" alt="Project Logo" width="70%">
+<img src="images/yt_dashboard_results.png" alt="Project Logo" width="70%">
 
 ### Author
 Jasdeep Singh Jhajj \
