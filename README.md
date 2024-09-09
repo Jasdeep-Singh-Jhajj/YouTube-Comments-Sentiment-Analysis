@@ -46,7 +46,7 @@ Results Page: \
 
 ### Author
 Jasdeep Singh Jhajj \
-Data Science Graduate (School of Information) \
+Data Science Graduate (College of Information) \
 University of Arizona 
 
 For detailed information, please refer to the yt_sentiment_project.pdf PDF report.

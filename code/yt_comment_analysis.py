@@ -472,8 +472,3 @@ def analyze_video(youtube_api_key, video_url="https://www.youtube.com/watch?v=ZI
     plot_confusion_matrix(conf_matrix)
 
     return title, accuracy, best_params
-
-# Example usage:
-#video_url = "https://www.youtube.com/watch?v=ZImYRu7hli4"
-#youtube_api_key = 'AIzaSyCVRR-N5-Fa1WE9maQ4uMcqXtUEhF-ven4'
-#analysis_results = analyze_video(youtube_api_key, video_url="https://www.youtube.com/watch?v=ZImYRu7hli4")
