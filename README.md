@@ -24,8 +24,14 @@ The explosive growth of YouTube has led to vibrant communities around user-gener
 ## Setup, Installation and Usage
 
 1. Create a virtual environment `python -m venv yt_sentiment_venv`.
-2. Activate the virtual environment On Windows `yt_sentiment_venv\Scripts\activate` OR On macOS/Linux `source myenv/bin/activate`.
-3. Install the dependencies from requirements.txt `pip install -r requirements.txt` inside code/ folder.
+2. Activate the virtual environment \
+    On Windows `yt_sentiment_venv\Scripts\activate` \
+    On macOS/Linux `source yt_sentiment_venv/bin/activate`
+3. Navigate to the `code/` directory and install the dependencies from requirements.txt `pip install -r requirements.txt`.
+4. Set the environment variable for the YouTube API key \
+    On Windows (Command Prompt): `set YOUTUBE_API_KEY=your_key` \
+    On Windows (PowerShell): `$env:YOUTUBE_API_KEY="your_key"` \
+    On macOS/Linux: `export YOUTUBE_API_KEY=your_key`
 4. Run the Flask application by executing `python main.py`.
 5. Access the application in your web browser at `http://localhost:5000`.
 6. Input the URL of the YouTube video to analyze and click the submit button.

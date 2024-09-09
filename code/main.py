@@ -35,7 +35,7 @@ def index():
 def analyze():
     if request.method == 'POST':
         video_url = request.form['video_url']
-        youtube_api_key = 'AIzaSyCVRR-N5-Fa1WE9maQ4uMcqXtUEhF-ven4'
+        youtube_api_key = os.getenv('YOUTUBE_API_KEY')
         title, accuracy, best_params = analyze_video(youtube_api_key, video_url)
         copy_images_to_static()
 
